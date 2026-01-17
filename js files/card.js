@@ -1,4 +1,7 @@
-    function addToCart(btn){
+   console.log("CARD JS CONNECTED");
+
+   
+   function addToCart(btn){
   const cardBottom = btn.parentElement;
   const qtyBox = cardBottom.querySelector(".qty-box");
 
