@@ -11,26 +11,28 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./css files/index.css">
-<link rel="icon" href="/Foods/img/icon.png">
+<link rel="icon" href="img/icon.png">
 </head>
 
 <body>
 
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
 
+    <!-- LOGO -->
+    <a href="/Foods/index.html" class="text-decoration-none">
+      <div class="logo">
+        <i class="fa-solid fa-house"></i> Fast Food
+      </div>
+    </a>
 
-    <a href="/Foods/index.html"><div class="logo">
-      <i class="fa-solid fa-house"></i> Fast Food
-    </div></a>
+    <!-- TOGGLER -->
+  
 
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-<section id="ghh">
 
+    <!-- MENU (ONLY LINKS) -->
     <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
       <ul class="navbar-nav text-center">
         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
@@ -40,13 +42,17 @@
         <li class="nav-item"><a class="nav-link" href="#sec">Contact Us</a></li>
       </ul>
     </div>
-</section>
-   
-    <div class="icons" onclick="toggleCart()">
+
+    <!-- CART ICON (OUTSIDE COLLAPSE) -->
+    <div class="icons ms-2" onclick="toggleCart()">
       <i class="fa-solid fa-cart-shopping"></i>
       <span id="cartCount">0</span>
     </div>
-
+<button class="navbar-toggler" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#mainNavbar">
+  <span class="navbar-toggler-icon"></span>
+</button>
   </div>
 </nav>
 
